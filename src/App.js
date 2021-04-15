@@ -35,4 +35,10 @@ function SignIn() {
     return <button onClick={signInWithGoogle}>Sign in with Google</button>;
 }
 
+function SignOut() {
+    return auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>;
+}
+
+function ChatRoom() {}
+
 export default App;
